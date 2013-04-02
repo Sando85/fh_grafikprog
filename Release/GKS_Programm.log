@@ -1,0 +1,31 @@
+﻿Build started 21.03.2013 12:43:56.
+     1>Project "S:\Grafikprogrammierung\Projekt\GKS_Programm\GKS_Programm.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\GKS_Programm.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"S:\Grafikprogrammierung\Projekt\GKS_Programm\Release\GKS_Programm.exe" /NOLOGO GServer100.lib /MANIFEST /ManifestFile:"Release\GKS_Programm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"S:\Grafikprogrammierung\Projekt\GKS_Programm\Release\GKS_Programm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"S:\Grafikprogrammierung\Projekt\GKS_Programm\Release\GKS_Programm.lib" /MACHINE:X86 Release\Drawable.obj
+         Release\GeoObject.obj
+         Release\GKSCircle.obj
+         Release\GKSLine.obj
+         Release\GKSPoint.obj
+         Release\GKS_Programm.obj
+         Release\GP_Aufgabe1.obj
+         Release\Kreis.obj
+         Release\Linie.obj
+         Release\Punkt.obj
+         Release\stdafx.obj
+         LINK : S:\Grafikprogrammierung\Projekt\GKS_Programm\Release\GKS_Programm.exe not found or not built by the last incremental link; performing full link
+         GKS_Programm.vcxproj -> S:\Grafikprogrammierung\Projekt\GKS_Programm\Release\GKS_Programm.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"S:\Grafikprogrammierung\Projekt\GKS_Programm\Release\GKS_Programm.exe;#1" /manifest Release\GKS_Programm.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\GKS_Programm.unsuccessfulbuild".
+         Touching "Release\GKS_Programm.lastbuildstate".
+     1>Done Building Project "S:\Grafikprogrammierung\Projekt\GKS_Programm\GKS_Programm.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.41
