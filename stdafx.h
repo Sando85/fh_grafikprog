@@ -37,6 +37,9 @@
 #include <atlstr.h>
 
 // TODO: Hier auf zusätzliche Header, die das Programm erfordert, verweisen.
-#include <cmath>
-#include <vector>
-#include "Database.h"
+#include <math.h>
+#include "CPunkt.h"
+#include "CLinie.h"
+#include "CKreis.h"
+#include "GeoObjekt.h"
+#include "GServer.h"

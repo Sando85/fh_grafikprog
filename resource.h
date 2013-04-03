@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by GKS_Programm.rc
+// Used by GrafikServerClientAnwendung1.rc
 //
 
 #define IDS_APP_TITLE			103

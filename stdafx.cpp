@@ -1,5 +1,5 @@
 // stdafx.cpp : Quelldatei, die nur die Standard-Includes einbindet.
-// GKS_Programm.pch ist der vorkompilierte Header.
+// GrafikServerClientAnwendung1.pch ist der vorkompilierte Header.
 // stdafx.obj enthält die vorkompilierten Typinformationen.
 
 #include "stdafx.h"
