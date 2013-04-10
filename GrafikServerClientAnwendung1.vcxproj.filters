@@ -42,7 +42,13 @@
     <ClInclude Include="CPunkt.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="GeoObjekt.h">
+    <ClInclude Include="DatenBasis.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoObject.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Vektor.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,7 +71,13 @@
     <ClCompile Include="CPunkt.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="GeoObjekt.cpp">
+    <ClCompile Include="DatenBasis.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoObject.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Vektor.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

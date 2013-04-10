@@ -1,8 +1,9 @@
 #pragma once
-#include "GeoObjekt.h"
+#include "stdafx.h"
 
-class CKreis : public CGeoObjekt
+class CKreis : public CGeoObject
 {
+
 public:
 	CKreis(int,CPunkt,float);
 	CKreis(int,CPunkt,CPunkt);
@@ -10,6 +11,9 @@ public:
 	CPunkt getMP();
 	CPunkt getPP();
 	void Zeichnen();
+	void schieben(CVektor*);
+	void drehen(CPunkt*,float);
+
 private:
 	CPunkt m_mp;
 	float m_radius;

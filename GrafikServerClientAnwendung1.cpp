@@ -18,6 +18,7 @@ CWinApp theApp;
 using namespace std;
 
 CServer gs;
+CDatenBasis* db = new CDatenBasis();
 
 int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 {

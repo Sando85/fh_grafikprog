@@ -1,6 +1,6 @@
 #include "StdAfx.h"
-//#include <iostream>
-//using namespace std;
+#define M_PI 3.14159265
+
 extern CServer gs;
 
 CKreis::CKreis(int id, CPunkt mp, float radius)
@@ -30,5 +30,20 @@ void CKreis::Zeichnen()
 	kreis.num_points = 2;
 	kreis.points = mp;
 
+	gs.gcreate_seg(m_iObjNr);
 	gs.gx_circle(&kreis);
+	gs.gclose_seg();
+}
+
+void CKreis::schieben(CVektor* dVektor)
+{
+	m_mp.set(m_mp.getX() + dVektor->get_a(), m_mp.getY() + dVektor->get_b());
+}
+
+void CKreis::drehen(CPunkt* center, float range)
+{
+	range = range * (M_PI / 180);
+	m_mp.set(m_mp.getX() - center->getX(), m_mp.getY() - center->getY());
+	m_mp.set(m_mp.getX() * cos(range) - m_mp.getY() * sin(range), m_mp.getX() * sin(range) + m_mp.getY() * cos(range));
+	m_mp.set(m_mp.getX() + center->getX(), m_mp.getY() + center->getY());
 }

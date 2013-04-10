@@ -83,17 +83,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CKreis.h" />
-    <ClInclude Include="GeoObjekt.h" />
+    <ClInclude Include="DatenBasis.h" />
+    <ClInclude Include="GeoObject.h" />
     <ClInclude Include="GKS_Programm.h" />
     <ClInclude Include="GrafikServerClientAnwendung1.h" />
     <ClInclude Include="CLinie.h" />
     <ClInclude Include="CPunkt.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Vektor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CKreis.cpp" />
-    <ClCompile Include="GeoObjekt.cpp" />
+    <ClCompile Include="DatenBasis.cpp" />
+    <ClCompile Include="GeoObject.cpp" />
     <ClCompile Include="GKS_Programm.cpp" />
     <ClCompile Include="GrafikServerClientAnwendung1.cpp" />
     <ClCompile Include="CLinie.cpp" />
@@ -102,6 +105,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Vektor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

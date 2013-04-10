@@ -41,5 +41,7 @@
 #include "CPunkt.h"
 #include "CLinie.h"
 #include "CKreis.h"
-#include "GeoObjekt.h"
+#include "DatenBasis.h"
+#include "GeoObject.h"
 #include "GServer.h"
+#include "Vektor.h"
