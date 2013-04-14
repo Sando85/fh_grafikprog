@@ -1,11 +1,11 @@
 #include "StdAfx.h"
 #include "GeoObject.h"
 
-CGeoObject::CGeoObject(){
+CGeoObject::CGeoObject(void){
 
 }
 
-CGeoObject::~CGeoObject(){
+CGeoObject::~CGeoObject(void){
 	
 }
 

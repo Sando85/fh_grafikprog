@@ -10,7 +10,7 @@ CGKSPoint::~CGKSPoint(){
 }
 
 CPunkt CGKSPoint::getPoint() const{
-	return point;
+	return CPunkt(point);
 }
 
 Gpoint CGKSPoint::createGpoint(CPunkt point){

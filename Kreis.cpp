@@ -20,12 +20,12 @@ CPunkt CKreis::getPeripheralPoint() const{
 	//Ruft den Kosntruktor mit defaultwerten auf...zumindest sollte er das
 	CPunkt point;
 	point.set(getCenter().get_x()+m_fRadius,getCenter().get_y());
-	return point;
+	return CPunkt(point);
 
 }
 
 CPunkt CKreis::getCenter() const{
-	return m_MP;	
+	return CPunkt(m_MP);	
 };
 
 float CKreis::getRadius() const {

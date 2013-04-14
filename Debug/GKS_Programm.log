@@ -1,143 +1,33 @@
-﻿Build started 4/14/2013 9:14:38 PM.
-     1>Project "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" on node 3 (rebuild target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\GKS_Programm.lastbuildstate".
-       InitializeBuildStatus:
-         Touching "Debug\GKS_Programm.unsuccessfulbuild".
+﻿Build started 4/14/2013 9:59:14 PM.
+     1>Project "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\GKS_Programm.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IS:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Klassen /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yc"StdAfx.h" /Fp"Debug\GKS_Programm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18): warning C4227: anachronism used : qualifiers on reference are ignored
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IS:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Klassen /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu"StdAfx.h" /Fp"Debug\GKS_Programm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Database.cpp Drawable.cpp GeoObject.cpp GKSCircle.cpp GKSDrawable.cpp GKSLine.cpp GKSPoint.cpp GKS_Programm.cpp GP_Aufgabe1.cpp Kreis.cpp Linie.cpp Punkt.cpp
-         Punkt.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(26): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(26): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(27): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(27): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(34): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(34): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(35): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(35): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(41): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(41): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(42): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(42): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(43): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\punkt.cpp(43): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-         Linie.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::CObject' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(534) : see declaration of 'CObject::CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject::CGeoObject(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::operator =' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(535) : see declaration of 'CObject::operator ='
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject &CGeoObject::operator =(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\linie.cpp(42): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\linie.cpp(43): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-         Kreis.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::operator =' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(535) : see declaration of 'CObject::operator ='
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject &CGeoObject::operator =(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\kreis.cpp(40): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-         GP_Aufgabe1.cpp
-         GKS_Programm.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4373: 'CGKSPoint::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4373: 'CGKSPoint::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(13): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(15): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(14): warning C4373: 'CGKSCircle::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(15): warning C4373: 'CGKSCircle::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::CObject' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(534) : see declaration of 'CObject::CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject::CGeoObject(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(13): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(15): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(14): warning C4373: 'CGKSLine::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(15): warning C4373: 'CGKSLine::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gks_programm.cpp(23): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gks_programm.cpp(134): warning C4305: 'argument' : truncation from 'double' to 'Gfloat'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gks_programm.cpp(134): warning C4305: 'argument' : truncation from 'double' to 'Gfloat'
-         GKSPoint.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4373: 'CGKSPoint::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4373: 'CGKSPoint::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::CObject' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(534) : see declaration of 'CObject::CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject::CGeoObject(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.cpp(40): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.cpp(45): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.cpp(50): warning C4227: anachronism used : qualifiers on reference are ignored
-         GKSLine.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(13): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(15): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(14): warning C4373: 'CGKSLine::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.h(15): warning C4373: 'CGKSLine::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::CObject' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(534) : see declaration of 'CObject::CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject::CGeoObject(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4373: 'CGKSPoint::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4373: 'CGKSPoint::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.cpp(25): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.cpp(31): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.cpp(32): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gksline.cpp(36): warning C4227: anachronism used : qualifiers on reference are ignored
-         GKSDrawable.cpp
-         GKSCircle.cpp
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(17): warning C4373: 'CGKSPoint::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkspoint.h(18): warning C4373: 'CGKSPoint::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(13): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(15): warning C4227: anachronism used : qualifiers on reference are ignored
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(14): warning C4373: 'CGKSCircle::rotate': virtual function overrides 'Drawable::rotate', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(17) : see declaration of 'Drawable::rotate'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.h(15): warning C4373: 'CGKSCircle::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
-                 s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\drawable.h(18) : see declaration of 'Drawable::scale'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\klassen\geoobject.h(17): error C2248: 'CObject::CObject' : cannot access private member declared in class 'CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(534) : see declaration of 'CObject::CObject'
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(509) : see declaration of 'CObject'
-                 This diagnostic occurred in the compiler generated function 'CGeoObject::CGeoObject(const CGeoObject &)'
-     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\gkscircle.cpp(31): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
-         GeoObject.cpp
-         Drawable.cpp
-         Database.cpp
-         Generating Code...
-     1>Done Building Project "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" (rebuild target(s)) -- FAILED.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe" /NOLOGO GServer100D.lib S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\Helper.lib /MANIFEST /ManifestFile:"Debug\GKS_Programm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.lib" /MACHINE:X86 Debug\Database.obj
+         Debug\Drawable.obj
+         Debug\GeoObject.obj
+         Debug\GKSCircle.obj
+         Debug\GKSDrawable.obj
+         Debug\GKSLine.obj
+         Debug\GKSPoint.obj
+         Debug\GKS_Programm.obj
+         Debug\GP_Aufgabe1.obj
+         Debug\Kreis.obj
+         Debug\Linie.obj
+         Debug\Punkt.obj
+         Debug\stdafx.obj
+         LINK : S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe not found or not built by the last incremental link; performing full link
+         GKS_Programm.vcxproj -> S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe;#1" /manifest Debug\GKS_Programm.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\GKS_Programm.unsuccessfulbuild".
+         Touching "Debug\GKS_Programm.lastbuildstate".
+     1>Done Building Project "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:19.69
+Time Elapsed 00:00:04.42

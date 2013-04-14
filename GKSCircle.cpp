@@ -13,7 +13,7 @@ CGKSCircle::~CGKSCircle(){
 }
 
 CKreis CGKSCircle::getCircle(){
-	return circle;
+	return CKreis(circle);
 }
 
 void CGKSCircle::draw(){

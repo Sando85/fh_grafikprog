@@ -2,7 +2,7 @@
 #include "../stdafx.h"
 #include <GServer.h>
 
-class CGeoObject : public CObject
+class CGeoObject// : public CObject
 {
 
 public:

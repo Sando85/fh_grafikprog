@@ -70,17 +70,17 @@ void CGKS_Programm::execute()
 			y = y + 25;
 		} 
 	
-	/**
+	
 	AfxMessageBox("Lösche Figur 1");	
 	//Loesche Figur 1
-	db->deleteObject(db->searchObject(101));
-	db->deleteObject(db->searchObject(102));
-	db->deleteObject(db->searchObject(103));
+	db->deleteObject(*db->searchObject(101));
+	db->deleteObject(*db->searchObject(102));
+	db->deleteObject(*db->searchObject(103));
 
 	AfxMessageBox("Lösche 2 Mittlere Linien aus Figur 3");	
 	//Loesche 2 Linien aus Figur 3
-	db->deleteObject(db->searchObject(302));
-	db->deleteObject(db->searchObject(303));
+	db->deleteObject(*db->searchObject(302));
+	db->deleteObject(*db->searchObject(303));
 
 	AfxMessageBox("Lösche alle Grafiken");	
 	//Loesche alle Grafiken
@@ -89,7 +89,7 @@ void CGKS_Programm::execute()
 	AfxMessageBox("Zeichne neu");	
 	//Neuzeichnen
 	db->redraw();
-	*/
+	
 
 	/**
 	AfxMessageBox("Verschiebe Figur 1 um (200,130)");	

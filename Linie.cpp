@@ -12,11 +12,11 @@ CLinie::~CLinie(){
 }
 
 CPunkt CLinie::getAP() const{
-	return m_AP;
+	return CPunkt(m_AP);
 }
 
 CPunkt CLinie::getEP() const{
-	return m_EP;
+	return CPunkt(m_EP);
 	
 }
 

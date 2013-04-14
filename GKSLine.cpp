@@ -13,7 +13,7 @@ CGKSLine::~CGKSLine(){
 };
 
 CLinie CGKSLine::getLine(){
-	return line;
+	return CLinie(line);
 }
 
 void CGKSLine::draw(){
@@ -34,7 +34,7 @@ Drawable& const CGKSLine::rotate(int angle, CPunkt base){
 };
 
 Drawable& const CGKSLine::scale(float xFactor,float yFactor,CPunkt base){
-	this->getLine().scale(xFactor,yFactor,base);
+	this->line.scale(xFactor,yFactor,base);
 	return *this;
 }
 
