@@ -8,17 +8,17 @@ class CDatabase {
 public:
 	CDatabase(void);
 	~CDatabase(void);
-	void addObject(Drawable* drawable);
-	void deleteObject(Drawable* drawable);
+	void addObject(Drawable &drawable);
+	void deleteObject(Drawable& drawable);
 	void deleteAllObjects();
-	void deleteGraphic(Drawable* drawable);
+	void deleteGraphic(Drawable &drawable);
 	void deleteGraphic(int id);
-	Drawable* searchObject(int id);
+	Drawable* const searchObject(int id) const;
 	void redraw();
 	void deleteAllGraphics();
 
 
 private:
-	int findPosition(Drawable* drawable);
-	std::vector<Drawable*>* drawables;
+	int findPosition(Drawable& drawable);
+	std::vector<Drawable* const> drawables;
 };

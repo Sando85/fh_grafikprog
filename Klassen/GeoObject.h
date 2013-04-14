@@ -8,7 +8,7 @@ class CGeoObject : public CObject
 public:
 	CGeoObject(void);
 	~CGeoObject(void);
-	int getObjNr();
+	int getObjNr() const;
 	void LoescheGrafik();
 	//virtual void getDefaultBasePoint = 0;
 protected:

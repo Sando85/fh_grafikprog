@@ -9,7 +9,7 @@ CGeoObject::~CGeoObject(){
 	
 }
 
-int CGeoObject::getObjNr(){
+int CGeoObject::getObjNr() const{
 	return m_iObjNr;
 }
 

@@ -2,41 +2,44 @@
 #include "StdAfx.h"
 #include "Kreis.h"
 
-CKreis::CKreis(CPunkt* middle, float radius){
+CKreis::CKreis(const CPunkt &center, float radius){
 	this->m_fRadius = radius;
-	this->m_MP = middle;
+	this->m_MP = center;
 };
 
 CKreis::~CKreis(){
-	delete m_MP;
 }
 
-void CKreis::Set(int id, CPunkt* punkt, float radius){
+void CKreis::Set(int id,const CPunkt &punkt, float radius){
 	this->m_iObjNr = id;
 	this->m_fRadius = radius;
 	this->m_MP = punkt;
 }
 
-CPunkt* CKreis::getPeripheralPoint(){
-
-	CPunkt* pPoint = new CPunkt(0.0f,0.0f);
-	pPoint->set(getCenter()->get_x()+m_fRadius,getCenter()->get_y());
-	return pPoint;
+const CPunkt& CKreis::getPeripheralPoint() const{
+	//Ruft den Kosntruktor mit defaultwerten auf...zumindest sollte er das
+	CPunkt point;
+	point.set(getCenter().get_x()+m_fRadius,getCenter().get_y());
+	return CPunkt(point);
 
 }
 
-CPunkt* CKreis::getCenter(){
-	return m_MP;	
+const CPunkt& CKreis::getCenter() const{
+	return CPunkt(this->m_MP);	
 };
 
-void CKreis::move(int x,int y, CPunkt* base){
-	m_MP->move(x,y,base);
+const float CKreis::getRadius() const {
+	return m_fRadius;
 }
 
-void CKreis::rotate(float angle, CPunkt* base){
-	m_MP->rotate(angle,base);
+void CKreis::move(int x,int y,const CPunkt &base){
+	m_MP.move(x,y,base);
 }
 
-void CKreis::scale(float xFactor, float yFactor, CPunkt* base){
-	m_MP->scale(xFactor,yFactor,base);
+void CKreis::rotate(float angle,const CPunkt &base){
+	m_MP.rotate(angle,base);
+}
+
+void CKreis::scale(float xFactor, float yFactor,const CPunkt &base){
+	m_MP.scale(xFactor,yFactor,base);
 }
