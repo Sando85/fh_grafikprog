@@ -47,3 +47,19 @@ void CGKSPoint::draw(){
 	
 }
 
+Drawable* CGKSPoint::move(int x, int y, CPunkt* base){
+	point->move(x,y,base);
+	return this;
+};
+
+Drawable* CGKSPoint::rotate(int angle, CPunkt* base){
+	point->rotate(angle,base);
+	return this;
+};
+
+Drawable* CGKSPoint::scale(float xFactor, float yFactor, CPunkt* base){
+	point->scale(xFactor,yFactor,base);
+	return this;
+}
+
+

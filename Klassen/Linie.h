@@ -10,6 +10,9 @@ public:
 	void Set(int, CPunkt*, CPunkt*);
 	CPunkt* getAP();
 	CPunkt* getEP();
+	void move(int x,int y, CPunkt* base);
+	void rotate(float angle, CPunkt* base);
+	void scale(float xFactor, float yFactor, CPunkt* base);
 	float getLength();
 
 private:

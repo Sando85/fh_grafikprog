@@ -68,7 +68,8 @@ void CGKS_Programm::execute()
 			db->addObject(p_linie);
 			y = y + 25;
 		} 
-		
+	
+	/**
 	AfxMessageBox("Lösche Figur 1");	
 	//Loesche Figur 1
 	db->deleteObject(db->searchObject(101));
@@ -87,6 +88,32 @@ void CGKS_Programm::execute()
 	AfxMessageBox("Zeichne neu");	
 	//Neuzeichnen
 	db->redraw();
+	*/
+
+	AfxMessageBox("Verschiebe Figur 1 um (200,130)");	
+	Drawable* obj;
+	for(int i = 101 ; i<=103 ; i++){
+		obj = db->searchObject(i);
+		if(i!=103){
+			CLinie* l = ((CGKSLine*)(obj))->getLine();
+			CPunkt* ap = l->getAP();
+			obj->move(200,130,(l->getAP()));
+		} else {
+			obj->move(200,130,((((CGKSCircle*)(obj))->getCircle())->getCenter()));
+		};
+	}
+	db->redraw();
+
+	AfxMessageBox("Drehen von Figur 3 um -45° bzgl. P(150,200)");	
+
+	AfxMessageBox("Drehen von Figur 1 um 45° bzgl. des eigenen Mittelpunktes");
+
+	AfxMessageBox("Verschieben von Figur 2 um (-150, 100)");	
+
+	AfxMessageBox("Lösche Figur 3");	
+
+
+	//
 
 	// Haltepunkt
 	AfxMessageBox("Programm Ende !");	
@@ -113,4 +140,19 @@ void CGKS_Programm::stopGKS(void)
 
 void CGKS_Programm::deleteObject(int id){
 	db->deleteObject(db->searchObject(id));
+}
+
+void CGKS_Programm::move(int objId,int dx, int dy, CPunkt* base){
+	Drawable* obj = db->searchObject(objId);
+	obj->move(dx,dy,base);
+}
+
+void CGKS_Programm::rotate(int objId, int angle, CPunkt* base){
+	Drawable* obj = db->searchObject(objId);
+	obj->rotate(angle,base);
+}
+
+void CGKS_Programm::scale(int objId, float xFactor, float yFactor, CPunkt* base){
+	Drawable* obj = db->searchObject(objId);
+	obj->scale(xFactor,yFactor,base);
 }

@@ -23,3 +23,19 @@ void CGKSLine::draw(){
 	gs.gpolyline(&list);
 };
 
+Drawable* CGKSLine::move(int x, int y, CPunkt* base){
+	//this->getLine()->getAP()->set(50,600);
+	this->getLine()->move(x,y,base);
+	return this;
+};
+
+Drawable* CGKSLine::rotate(int angle, CPunkt* base){
+	this->getLine()->rotate(angle,base);
+	return this;
+};
+
+Drawable* CGKSLine::scale(float xFactor,float yFactor,CPunkt* base){
+	this->getLine()->scale(xFactor,yFactor,base);
+	return this;
+}
+

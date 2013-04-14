@@ -1,9 +1,14 @@
 #pragma once
 #include "GServer.h"
+#include "Helper\Helper\Vector.h"
+#include "Klassen\Punkt.h"
 
 extern CServer gs;
 
 class CDatabase;
+class CVector;
+class CPunkt;
+
 
 class CGKS_Programm //: public CServer
 {
@@ -15,6 +20,9 @@ public:
 	void startGKS(void);
 	void stopGKS(void);
 	void deleteObject(int id);
+	void move(int objId, int dx, int dy, CPunkt* base);
+	void rotate(int objId, int angle, CPunkt* base);
+	void scale(int objId, float xFactor, float yFactor, CPunkt* base);
 
 private:
 	CDatabase* db;

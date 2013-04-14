@@ -28,3 +28,15 @@ CPunkt* CKreis::getPeripheralPoint(){
 CPunkt* CKreis::getCenter(){
 	return m_MP;	
 };
+
+void CKreis::move(int x,int y, CPunkt* base){
+	m_MP->move(x,y,base);
+}
+
+void CKreis::rotate(float angle, CPunkt* base){
+	m_MP->rotate(angle,base);
+}
+
+void CKreis::scale(float xFactor, float yFactor, CPunkt* base){
+	m_MP->scale(xFactor,yFactor,base);
+}

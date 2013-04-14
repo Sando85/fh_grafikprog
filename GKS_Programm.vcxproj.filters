@@ -31,12 +31,6 @@
     <Filter Include="Quelldateien\GKS Classes">
       <UniqueIdentifier>{18092d91-f2d1-4a82-acf7-796cc5ed5ad5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headerdateien\Helperclass Headers">
-      <UniqueIdentifier>{2a17dcc2-9927-4798-943f-8551b185e275}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Quelldateien\Helperclasses">
-      <UniqueIdentifier>{d44f22dd-d03f-4983-a350-0dbebebbddcf}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -45,18 +39,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Klassen\GeoObject.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Klassen\Kreis.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Klassen\Linie.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Klassen\Punkt.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
     <ClInclude Include="GKSPoint.h">
       <Filter>Headerdateien\GKS Objects Header</Filter>
     </ClInclude>
@@ -82,6 +64,18 @@
       <Filter>Headerdateien\GKS Objects Header</Filter>
     </ClInclude>
     <ClInclude Include="Database.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\GeoObject.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\Linie.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\Kreis.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\Punkt.h">
       <Filter>Headerdateien\Base Object Header</Filter>
     </ClInclude>
   </ItemGroup>

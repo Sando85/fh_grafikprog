@@ -51,7 +51,7 @@
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>S:\Grafikprogrammierung\Projekt\Klassen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Klassen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -60,7 +60,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>GServer100D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>GServer100D.lib;"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\Helper.lib";%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -83,10 +83,6 @@
     <None Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Klassen\GeoObject.h" />
-    <ClInclude Include="..\Klassen\Kreis.h" />
-    <ClInclude Include="..\Klassen\Linie.h" />
-    <ClInclude Include="..\Klassen\Punkt.h" />
     <ClInclude Include="Database.h" />
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="GKSCircle.h" />
@@ -94,6 +90,10 @@
     <ClInclude Include="GKSLine.h" />
     <ClInclude Include="GKSPoint.h" />
     <ClInclude Include="GKS_Programm.h" />
+    <ClInclude Include="Klassen\GeoObject.h" />
+    <ClInclude Include="Klassen\Kreis.h" />
+    <ClInclude Include="Klassen\Linie.h" />
+    <ClInclude Include="Klassen\Punkt.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

@@ -15,6 +15,9 @@ public :
 	static Gpoint createGpoint(float x, float y);
 	Drawable* createDrawableObject(CGeoObject* geoObj);
 	CGKSPoint* getPointCopy();
+	Drawable* move(int x, int y, CPunkt* base);
+	Drawable* rotate(int angle, CPunkt* base);
+	Drawable* scale(float xFactor, float yFactor, CPunkt* base);
 
 protected:
 	Gpoint gPoint;
