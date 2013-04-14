@@ -39,18 +39,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Klassen\GeoObject.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Klassen\Kreis.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Klassen\Linie.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Klassen\Punkt.h">
-      <Filter>Headerdateien\Base Object Header</Filter>
-    </ClInclude>
     <ClInclude Include="GKSPoint.h">
       <Filter>Headerdateien\GKS Objects Header</Filter>
     </ClInclude>
@@ -76,6 +64,18 @@
       <Filter>Headerdateien\GKS Objects Header</Filter>
     </ClInclude>
     <ClInclude Include="Database.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\GeoObject.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\Linie.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\Kreis.h">
+      <Filter>Headerdateien\Base Object Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Klassen\Punkt.h">
       <Filter>Headerdateien\Base Object Header</Filter>
     </ClInclude>
   </ItemGroup>
