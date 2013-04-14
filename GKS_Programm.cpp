@@ -18,30 +18,30 @@ CGKS_Programm::~CGKS_Programm(void)
 void CGKS_Programm::execute()
 {	
 
-	CGKSLine* p_linie;
-	CGKSCircle* p_kreis;
+	CGKSLine p_linie(-1);
+	CGKSCircle p_kreis(-1);
 	float s45=0.5*sqrt(2.0f);
 	// Figur 1
 	CGKSPoint mp(-1), p1(-1), p2(-1);
 	
-	mp.getPoint()->set(100,100);
+	mp.setPoint(CPunkt(100,100));// getPoint()->set(100,100);
 	
-	p1.getPoint()->set(100+50*s45,100+50*s45);
-	p2.getPoint()->set(100-50*s45,100-50*s45);
+	p1.setPoint(CPunkt(100+50*s45,100+50*s45)); //getPoint()->set(100+50*s45,100+50*s45);
+	p2.setPoint(CPunkt(100-50*s45,100-50*s45)); //getPoint()->set(100-50*s45,100-50*s45);
 	
-	p_linie = new CGKSLine(101,new CLinie(p1.getPoint(), p2.getPoint()));
-	p_linie->Zeichnen();
+	p_linie = CGKSLine(101,CLinie(p1.getPoint(), p2.getPoint()));
+	p_linie.Zeichnen();
 	db->addObject(p_linie);
 
-	p1.getPoint()->set(100+50*s45,100-50*s45);
-	p2.getPoint()->set(100-50*s45,100+50*s45);
+	p1.setPoint(CPunkt(100+50*s45,100-50*s45)); //getPoint()->set(100+50*s45,100-50*s45);
+	p2.setPoint(CPunkt(100-50*s45,100+50*s45)); //getPoint()->set(100-50*s45,100+50*s45);
 
-	p_linie = new CGKSLine(102,new CLinie(p1.getPoint(), p2.getPoint()));
-	p_linie->Zeichnen();
+	p_linie = CGKSLine(102,CLinie(p1.getPoint(), p2.getPoint()));
+	p_linie.Zeichnen();
 	db->addObject(p_linie);
 
-	p_kreis = new CGKSCircle(103,new CKreis(mp.getPoint(),50.0f));
-	p_kreis->Zeichnen();
+	p_kreis = CGKSCircle(103, CKreis(mp.getPoint(),50.0f));
+	p_kreis.Zeichnen();
 	db->addObject(p_kreis);
 
 	// Figur 2
@@ -49,22 +49,23 @@ void CGKS_Programm::execute()
 	//Man braucht an dieser Stelle eine Kopie des Punktes, da sonst 
 	//die anderen Kreise, in denen der Punkt verwendet wird beeinflusst
 	//werden
-	mp = *(mp.getPointCopy());
-	mp.getPoint()->set(300,100);
-	p_kreis = new CGKSCircle(201, new CKreis(mp.getPoint(),25));
-	p_kreis->Zeichnen();
+	//mp = *(mp.getPointCopy());
+	mp.setPoint(CPunkt(300,100));//getPoint()->set(300,100);
+	p_kreis = CGKSCircle(201, CKreis(mp.getPoint(),25));
+	p_kreis.Zeichnen();
 	db->addObject(p_kreis);
-	p_kreis = new CGKSCircle(202, new CKreis(mp.getPoint(),50));
-	p_kreis->Zeichnen();
+	p_kreis = CGKSCircle(202, CKreis(mp.getPoint(),50));
+	p_kreis.Zeichnen();
 	db->addObject(p_kreis);
 
 	// Figur 3 (von unten nach oben)
 	float x1=150, x2=250, y=200;
 	for (int i=301; i<=304; i++)
 		{
-			p1.getPoint()->set(x1,y); p2.getPoint()->set(x2,y);
-			p_linie = new CGKSLine(i, new CLinie(p1.getPoint(),p2.getPoint()));
-			p_linie->Zeichnen();
+			p1.setPoint(CPunkt(x1,y)); //getPoint()->set(x1,y);
+			p2.setPoint(CPunkt(x2,y)); //getPoint()->set(x2,y);
+			p_linie = CGKSLine(i, CLinie(p1.getPoint(),p2.getPoint()));
+			p_linie.Zeichnen();
 			db->addObject(p_linie);
 			y = y + 25;
 		} 
@@ -90,7 +91,9 @@ void CGKS_Programm::execute()
 	db->redraw();
 	*/
 
+	/**
 	AfxMessageBox("Verschiebe Figur 1 um (200,130)");	
+	
 	Drawable* obj;
 	for(int i = 101 ; i<=103 ; i++){
 		obj = db->searchObject(i);
@@ -102,6 +105,7 @@ void CGKS_Programm::execute()
 			obj->move(200,130,((((CGKSCircle*)(obj))->getCircle())->getCenter()));
 		};
 	}
+	
 	db->redraw();
 
 	AfxMessageBox("Drehen von Figur 3 um -45° bzgl. P(150,200)");	
@@ -111,7 +115,7 @@ void CGKS_Programm::execute()
 	AfxMessageBox("Verschieben von Figur 2 um (-150, 100)");	
 
 	AfxMessageBox("Lösche Figur 3");	
-
+	*/
 
 	//
 
@@ -139,20 +143,20 @@ void CGKS_Programm::stopGKS(void)
 }
 
 void CGKS_Programm::deleteObject(int id){
-	db->deleteObject(db->searchObject(id));
+	db->deleteObject(*(db->searchObject(id)));
 }
 
-void CGKS_Programm::move(int objId,int dx, int dy, CPunkt* base){
+void CGKS_Programm::move(int objId,int dx, int dy, CPunkt base){
 	Drawable* obj = db->searchObject(objId);
 	obj->move(dx,dy,base);
 }
 
-void CGKS_Programm::rotate(int objId, int angle, CPunkt* base){
+void CGKS_Programm::rotate(int objId, int angle, CPunkt base){
 	Drawable* obj = db->searchObject(objId);
 	obj->rotate(angle,base);
 }
 
-void CGKS_Programm::scale(int objId, float xFactor, float yFactor, CPunkt* base){
+void CGKS_Programm::scale(int objId, float xFactor, float yFactor, CPunkt base){
 	Drawable* obj = db->searchObject(objId);
 	obj->scale(xFactor,yFactor,base);
 }

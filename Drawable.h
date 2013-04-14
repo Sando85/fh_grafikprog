@@ -13,9 +13,9 @@ public:
 	int getID() const;
 	void deleteGraphic();
 	bool isVisible();
-	virtual Drawable& move(int x, int y,const CPunkt &base) = 0;
-	virtual Drawable& rotate(int angle,const CPunkt &base) = 0;
-	virtual Drawable& scale(float xFactor,float yFactor, const CPunkt &base) = 0;
+	virtual Drawable& const move(int x, int y,CPunkt base) = 0;
+	virtual Drawable& const rotate(int angle,const CPunkt base) = 0;
+	virtual Drawable& const scale(float xFactor,float yFactor, const CPunkt base) = 0;
 
 protected:
 	void setID(int id);

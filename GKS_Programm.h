@@ -20,9 +20,9 @@ public:
 	void startGKS(void);
 	void stopGKS(void);
 	void deleteObject(int id);
-	void move(int objId, int dx, int dy, CPunkt* base);
-	void rotate(int objId, int angle, CPunkt* base);
-	void scale(int objId, float xFactor, float yFactor, CPunkt* base);
+	void move(int objId, int dx, int dy,CPunkt base);
+	void rotate(int objId, int angle,const CPunkt base);
+	void scale(int objId, float xFactor, float yFactor,CPunkt base);
 
 private:
 	CDatabase* db;

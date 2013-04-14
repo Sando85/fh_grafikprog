@@ -5,23 +5,21 @@
 class CGKSPoint : public CGKSDrawable {
 
 public : 
-	CGKSPoint::CGKSPoint(int id);
-	CGKSPoint(int id, CPunkt* point);
+	CGKSPoint(int id,CPunkt point = CPunkt(0,0));
 	~CGKSPoint();
-	CPunkt* getPoint();
-	void setPoint(CPunkt* point);
+	CPunkt getPoint() const;
+	void setPoint(CPunkt point);
 
-	static Gpoint createGpoint(CPunkt* point);
+	static Gpoint createGpoint(CPunkt point);
 	static Gpoint createGpoint(float x, float y);
-	Drawable* createDrawableObject(CGeoObject* geoObj);
-	CGKSPoint* getPointCopy();
-	Drawable* move(int x, int y, CPunkt* base);
-	Drawable* rotate(int angle, CPunkt* base);
-	Drawable* scale(float xFactor, float yFactor, CPunkt* base);
+	//Drawable* createDrawableObject(CGeoObject* geoObj);
+	Drawable& const move(int x, int y,CPunkt base);
+	Drawable& const rotate(int angle,CPunkt base);
+	Drawable& const scale(float xFactor, float yFactor,CPunkt base);
 
 protected:
 	Gpoint gPoint;
-	CPunkt* point;
+	CPunkt point;
 
 private :
 	void draw();

@@ -17,7 +17,6 @@ public:
 	void redraw();
 	void deleteAllGraphics();
 
-
 private:
 	int findPosition(Drawable& drawable);
 	std::vector<Drawable* const> drawables;

@@ -7,12 +7,10 @@
 **/
 
 CDatabase::CDatabase(){
-	drawables = new std::vector<Drawable> ();
 };
 
 CDatabase::~CDatabase(){
-	drawables->clear();
-	delete drawables;
+	drawables.clear();
 };
 
 /**
@@ -20,12 +18,12 @@ CDatabase::~CDatabase(){
 **/
 
 void CDatabase::addObject(Drawable &drawable){
-	drawables->push_back(drawable);
+	drawables.push_back(&drawable);
 };
 
 void CDatabase::deleteObject(Drawable &drawable){
 	deleteGraphic(drawable);
-	drawables->erase(drawables->begin()+findPosition(drawable));
+	drawables.erase(drawables.begin()+findPosition(drawable));
 };
 
 void CDatabase::deleteGraphic(Drawable &drawable){
@@ -37,9 +35,9 @@ void CDatabase::deleteGraphic(int id){
 };
 
 Drawable* const CDatabase::searchObject(int id) const{
-	std::vector<Drawable>::iterator it = drawables->begin();
-	while(it != drawables->end()){
-		Drawable* p = &(*it++);
+	std::vector<Drawable* const>::const_iterator it = drawables.begin();
+	while(it != drawables.end()){
+		Drawable* p = (*it++);
 		if(p->getID() == id)
 			return p;
 	};
@@ -48,17 +46,17 @@ Drawable* const CDatabase::searchObject(int id) const{
 
 void CDatabase::redraw(){
 	deleteAllGraphics();
-	std::vector<Drawable>::iterator it = drawables->begin();
-	while(it != drawables->end()){
-		Drawable* p = &(*it++);
+	std::vector<Drawable* const>::const_iterator it = drawables.begin();
+	while(it != drawables.end()){
+		Drawable* p = (*it++);
 		p->Zeichnen();
 	};
 };
 
 void CDatabase::deleteAllGraphics(){
-	std::vector<Drawable>::iterator it = drawables->begin();
-	while(it != drawables->end()){
-		Drawable* p = &(*it++);
+	std::vector<Drawable* const>::iterator it = drawables.begin();
+	while(it != drawables.end()){
+		Drawable* p = *it++;
 		p->deleteGraphic();
 	};
 };
@@ -68,8 +66,8 @@ void CDatabase::deleteAllGraphics(){
 **/
 
 int CDatabase::findPosition(Drawable& drawable){
-	for(unsigned int i = 0;i<(drawables->size());i++){
-		if(drawables->at(i)!=0 && drawable->getID() == drawables->at(i)->getID()){
+	for(unsigned int i = 0;i<(drawables.size());i++){
+		if(drawables.at(i)!=0 && drawable.getID() == drawables.at(i)->getID()){
 				return i;
 		};
 	};

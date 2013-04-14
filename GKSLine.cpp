@@ -3,17 +3,16 @@
 #include "GKSPoint.h"
 #include "Drawable.h"
 
-CGKSLine::CGKSLine(int id,CLinie* line) : CGKSDrawable(id){
+CGKSLine::CGKSLine(int id,CLinie line) : CGKSDrawable(id){
 	this->line = line;
-	this->AP = CGKSPoint::createGpoint(line->getAP());
-	this->EP = CGKSPoint::createGpoint(line->getEP());
+	this->AP = CGKSPoint::createGpoint(line.getAP());
+	this->EP = CGKSPoint::createGpoint(line.getEP());
 }
 
 CGKSLine::~CGKSLine(){
-	delete line;
 };
 
-CLinie* CGKSLine::getLine(){
+CLinie CGKSLine::getLine(){
 	return line;
 }
 
@@ -23,19 +22,19 @@ void CGKSLine::draw(){
 	gs.gpolyline(&list);
 };
 
-Drawable* CGKSLine::move(int x, int y, CPunkt* base){
+Drawable& const CGKSLine::move(int x, int y, CPunkt base){
 	//this->getLine()->getAP()->set(50,600);
-	this->getLine()->move(x,y,base);
-	return this;
+	this->line.move(x,y,base);
+	return *this;
 };
 
-Drawable* CGKSLine::rotate(int angle, CPunkt* base){
-	this->getLine()->rotate(angle,base);
-	return this;
+Drawable& const CGKSLine::rotate(int angle, CPunkt base){
+	this->line.rotate(angle,base);
+	return *this;
 };
 
-Drawable* CGKSLine::scale(float xFactor,float yFactor,CPunkt* base){
-	this->getLine()->scale(xFactor,yFactor,base);
-	return this;
+Drawable& const CGKSLine::scale(float xFactor,float yFactor,CPunkt base){
+	this->getLine().scale(xFactor,yFactor,base);
+	return *this;
 }
 

@@ -9,9 +9,9 @@ public:
 	void set(float, float);
 	float get_x() const;
 	float get_y() const;
-	void move(int x,int y, const CPunkt &base);
-	void rotate(int angle,const CPunkt &base);
-	void scale(float xFactor, float yFactor,const CPunkt &base);
+	void move(int x,int y,CPunkt base);
+	void rotate(int angle,CPunkt base);
+	void scale(float xFactor, float yFactor,CPunkt base);
 	//void Zeichnen();
 	
 private:
