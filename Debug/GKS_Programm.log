@@ -1,12 +1,15 @@
-﻿Build started 4/14/2013 9:59:14 PM.
-     1>Project "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" on node 2 (build target(s)).
+﻿Der Buildvorgang wurde am 15.04.2013 08:54:15 gestartet.
+     1>Projekt "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" auf Knoten "2", build Ziel(e).
      1>InitializeBuildStatus:
-         Creating "Debug\GKS_Programm.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         "Debug\GKS_Programm.unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
        ClCompile:
-         All outputs are up-to-date.
-         All outputs are up-to-date.
+         Alle Ausgaben sind aktuell.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IS:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Klassen /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu"StdAfx.h" /Fp"Debug\GKS_Programm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Linie.cpp
+         Linie.cpp
+     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\linie.cpp(42): warning C4244: 'Argument': Konvertierung von 'float' in 'int', möglicher Datenverlust
+     1>s:\grafikprogrammierung\projekt\gitreps\fh_grafikprog\linie.cpp(43): warning C4244: 'Argument': Konvertierung von 'float' in 'int', möglicher Datenverlust
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe" /NOLOGO GServer100D.lib S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\Helper.lib /MANIFEST /ManifestFile:"Debug\GKS_Programm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.lib" /MACHINE:X86 Debug\Database.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe" /NOLOGO GServer100D.lib S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\Helper.lib /MANIFEST /ManifestFile:"Debug\GKS_Programm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.lib" /MACHINE:X86 Debug\Database.obj
          Debug\Drawable.obj
          Debug\GeoObject.obj
          Debug\GKSCircle.obj
@@ -19,15 +22,15 @@
          Debug\Linie.obj
          Debug\Punkt.obj
          Debug\stdafx.obj
-         LINK : S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe not found or not built by the last incremental link; performing full link
+         LINK : S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe wurde nicht gefunden oder beim letzten inkrementellen Linkvorgang nicht erstellt; vollständiger Link wird durchgeführt.
          GKS_Programm.vcxproj -> S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe;#1" /manifest Debug\GKS_Programm.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\Debug\GKS_Programm.exe;#1" /manifest Debug\GKS_Programm.exe.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
        FinalizeBuildStatus:
-         Deleting file "Debug\GKS_Programm.unsuccessfulbuild".
-         Touching "Debug\GKS_Programm.lastbuildstate".
-     1>Done Building Project "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" (build target(s)).
+         Die Datei "Debug\GKS_Programm.unsuccessfulbuild" wird gelöscht.
+         Aktualisieren des Timestamps von "Debug\GKS_Programm.lastbuildstate".
+     1>Die Erstellung des Projekts "S:\Grafikprogrammierung\Projekt\gitreps\fh_grafikprog\GKS_Programm.vcxproj" ist abgeschlossen, build Ziel(e).
 
-Build succeeded.
+Das Erstellen war erfolgreich.
 
-Time Elapsed 00:00:04.42
+Verstrichene Zeit 00:00:10.01

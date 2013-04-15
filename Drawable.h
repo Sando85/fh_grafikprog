@@ -17,6 +17,7 @@ public:
 	virtual Drawable& const rotate(int angle,const CPunkt base) = 0;
 	virtual Drawable& const scale(float xFactor,float yFactor, const CPunkt base) = 0;
 
+
 protected:
 	void setID(int id);
 	int objID;

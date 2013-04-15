@@ -16,8 +16,9 @@ public:
 	Drawable* const searchObject(int id) const;
 	void redraw();
 	void deleteAllGraphics();
+	void printAllElements();
 
 private:
 	int findPosition(Drawable& drawable);
-	std::vector<Drawable* const> drawables;
+	std::vector<Drawable*> drawables;
 };

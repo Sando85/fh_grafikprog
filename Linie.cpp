@@ -34,8 +34,8 @@ void CLinie::Set(int id,CPunkt AP, CPunkt EP){
 
 void CLinie::move(int x,int y,const CPunkt base){
 	//this->getAP()->set(45,90);
-	this->getAP().move(x,y,base);
-	this->getEP().move(x,y,base);
+	this->m_AP.move(x,y,base);
+	this->m_EP.move(x,y,base);
 }
 
 void CLinie::rotate(float angle,const CPunkt base){
