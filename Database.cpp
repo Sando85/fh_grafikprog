@@ -35,7 +35,7 @@ void CDatabase::deleteGraphic(int id){
 		searchObject(id)->deleteGraphic();
 };
 
-Drawable* const CDatabase::searchObject(int id) const{
+Drawable* CDatabase::searchObject(int id) const{
 	std::vector<Drawable*>::const_iterator it = drawables.begin();
 	while(it != drawables.end()){
 		Drawable* p = (*it++);

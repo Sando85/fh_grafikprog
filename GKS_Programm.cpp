@@ -89,31 +89,44 @@ void CGKS_Programm::execute()
 	AfxMessageBox("Zeichne neu");	
 	//Neuzeichnen
 	db->redraw();
-	
-	AfxMessageBox("Verschiebe Figur 1 um (200,130)");	
 	*/
 
-	Drawable* obj = db->searchObject(101);
-	CPunkt base = CPunkt(100,100);
-	obj->move(200,130,base);
-
-	obj = db->searchObject(102);
-	obj->move(200,130,base);
-
-	obj = db->searchObject(103);
-	obj->move(200,130,base);
-
+	AfxMessageBox("Verschiebe Figur 1 um (200,130)");	
+	
+	
+	CPunkt base; //= CPunkt(100,100);
+	db->searchObject(101)->move(200,130,base);
+	db->searchObject(102)->move(200,130,base);
+	db->searchObject(103)->move(200,130,base);
 	db->redraw();
-
+	
 	AfxMessageBox("Drehen von Figur 3 um -45° bzgl. P(150,200)");	
+
+	for (int i=301; i<=304; i++) {
+		db->searchObject(i)->rotate(-45,CPunkt(150,200));	
+	}
+	db->redraw();
 
 	AfxMessageBox("Drehen von Figur 1 um 45° bzgl. des eigenen Mittelpunktes");
 
+	base = base.move(300,230);
+	db->searchObject(101)->rotate(45,base);
+	db->searchObject(102)->rotate(45,base);
+	db->searchObject(103)->rotate(45,base);
+	db->redraw();
+
 	AfxMessageBox("Verschieben von Figur 2 um (-150, 100)");	
+	base = CPunkt(0,0);
+	db->searchObject(201)->move(-150,100,base);
+	db->searchObject(202)->move(-150,100,base);
+
+	db->redraw();
 
 	AfxMessageBox("Lösche Figur 3");	
-	
-
+	for (int i=301; i<=304; i++) {
+		db->deleteObject(*db->searchObject(i));
+	}
+	db->redraw();
 	//
 
 	// Haltepunkt

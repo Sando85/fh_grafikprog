@@ -15,3 +15,4 @@ public:
 
 CVector operator*(CMatrix A,CVector x);
 CVector operator+(CMatrix A,CVector B);
+CVector operator-(CMatrix A,CVector B);

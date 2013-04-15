@@ -22,25 +22,28 @@ float CPunkt::get_y() const{
 	return this->y;
 }
 
-void CPunkt::move(int x, int y,CPunkt base){
+const CPunkt& CPunkt::move(float x, float y,CPunkt base){
 	CVector hx = CMatrixFactory::createHomogeneousCoordinates(x-base.get_x(),y-base.get_y());
 	CVector p = CMatrixFactory::createHomogeneousCoordinates(this->get_x(),this->get_y());
 	CVector res = hx+p;
 	this->set(res.getValueAt(0,0), res.getValueAt(1,0));
+	return *this;
 };
 
-void CPunkt::rotate(int angle, CPunkt base){
+const CPunkt& CPunkt::rotate(float angle, CPunkt base){
 	CMatrix R = CMatrixFactory::createRotatingMatrix(angle);
 	CVector hx = CMatrixFactory::createHomogeneousCoordinates(base.get_x(),base.get_y());
 	CVector p = CMatrixFactory::createHomogeneousCoordinates(this->get_x(),this->get_y());
-	CVector res = R*(hx+p);
+	CVector res = hx+(R*(p-hx));
 	this->set(res.getValueAt(0,0), res.getValueAt(1,0));
+	return *this;
 };
 
-void CPunkt::scale(float xFactor, float yFactor, CPunkt base){
+const CPunkt& CPunkt::scale(float xFactor, float yFactor, CPunkt base){
 	CMatrix S = CMatrixFactory::createScalingMatrix(xFactor,yFactor);
 	CVector hx = CMatrixFactory::createHomogeneousCoordinates(base.get_x(),base.get_y());
 	CVector p = CMatrixFactory::createHomogeneousCoordinates(this->get_x(),this->get_y());
-	CVector res = S*(hx+p);
+	CVector res = hx+(S*(p-hx));
 	this->set(res.getValueAt(0,0), res.getValueAt(1,0));
+	return *this;
 }

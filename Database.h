@@ -13,7 +13,7 @@ public:
 	void deleteAllObjects();
 	void deleteGraphic(Drawable &drawable);
 	void deleteGraphic(int id);
-	Drawable* const searchObject(int id) const;
+	Drawable* searchObject(int id) const;
 	void redraw();
 	void deleteAllGraphics();
 	void printAllElements();

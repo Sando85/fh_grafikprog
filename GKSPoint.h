@@ -13,9 +13,10 @@ public :
 	static Gpoint createGpoint(CPunkt point);
 	static Gpoint createGpoint(float x, float y);
 	//Drawable* createDrawableObject(CGeoObject* geoObj);
-	Drawable& const move(int x, int y,CPunkt base);
-	Drawable& const rotate(int angle,CPunkt base);
+	Drawable& const move(float x, float y,CPunkt base);
+	Drawable& const rotate(float angle,CPunkt base);
 	Drawable& const scale(float xFactor, float yFactor,CPunkt base);
+
 
 protected:
 	Gpoint gPoint;
@@ -23,4 +24,5 @@ protected:
 
 private :
 	void draw();
+	virtual void updateGpoints();
 };

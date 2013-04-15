@@ -32,14 +32,17 @@ float CKreis::getRadius() const {
 	return m_fRadius;
 }
 
-void CKreis::move(int x,int y,const CPunkt base){
+const CKreis& CKreis::move(float x,float y,const CPunkt base){
 	m_MP.move(x,y,base);
+	return *this;
 }
 
-void CKreis::rotate(float angle,const CPunkt base){
+const CKreis& CKreis::rotate(float angle,const CPunkt base){
 	m_MP.rotate(angle,base);
+	return *this;
 }
 
-void CKreis::scale(float xFactor, float yFactor,const CPunkt base){
+const CKreis& CKreis::scale(float xFactor, float yFactor,const CPunkt base){
 	m_MP.scale(xFactor,yFactor,base);
+	return *this;
 }

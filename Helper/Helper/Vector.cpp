@@ -47,3 +47,18 @@ CVector operator+(CMatrix A, CVector B){
 	}
 	return res;
 }
+
+CVector operator-(CMatrix A, CVector B){
+	if(A.getColumnCount()!=B.getColumnCount() ||
+		A.getRowCount() != B.getRowCount()){
+			return 0;
+	}
+
+	CVector res = CVector(A.getRowCount());
+	for(int i = 0; i<A.getRowCount();i++){
+		for(int j = 0; j<A.getColumnCount();j++){
+			res.setElement(i,A.getValueAt(i,j)-B.getValueAt(i,j));
+		}
+	}
+	return res;
+}

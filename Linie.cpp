@@ -32,18 +32,21 @@ void CLinie::Set(int id,CPunkt AP, CPunkt EP){
 	this->m_EP = CPunkt(EP);
 }
 
-void CLinie::move(int x,int y,const CPunkt base){
+const CLinie& CLinie::move(float x,float y,const CPunkt base){
 	//this->getAP()->set(45,90);
 	this->m_AP.move(x,y,base);
 	this->m_EP.move(x,y,base);
+	return *this;
 }
 
-void CLinie::rotate(float angle,const CPunkt base){
+const CLinie& CLinie::rotate(float angle,const CPunkt base){
 	m_AP.rotate(angle,base);
 	m_EP.rotate(angle,base);
+	return *this;
 }
 
-void CLinie::scale(float xFactor, float yFactor,const CPunkt base){
+const CLinie& CLinie::scale(float xFactor, float yFactor,const CPunkt base){
 	m_AP.scale(xFactor,yFactor,base);
 	m_EP.scale(xFactor,yFactor,base);
+	return *this;
 }
