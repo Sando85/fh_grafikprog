@@ -37,19 +37,26 @@ void CGKSPoint::draw(){
 	
 }
 
-Drawable& const CGKSPoint::move(int x, int y,CPunkt base){
+Drawable& const CGKSPoint::move(float x, float y,CPunkt base){
 	point.move(x,y,base);
+	updateGpoints();
 	return *this;
 };
 
-Drawable& const CGKSPoint::rotate(int angle, CPunkt base){
+Drawable& const CGKSPoint::rotate(float angle, CPunkt base){
 	point.rotate(angle,base);
+	updateGpoints();
 	return *this;
 };
 
 Drawable& const CGKSPoint::scale(float xFactor, float yFactor, CPunkt base){
 	point.scale(xFactor,yFactor,base);
+	updateGpoints();
 	return *this;
+}
+
+void CGKSPoint::updateGpoints(){
+	gPoint = CGKSPoint::createGpoint(point);
 }
 
 

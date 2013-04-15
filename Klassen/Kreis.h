@@ -10,9 +10,9 @@ public:
 	CPunkt getCenter() const;
 	CPunkt getPeripheralPoint() const;
 	float getRadius() const;
-	void move(int x,int y,CPunkt base);
-	void rotate(float angle,CPunkt base);
-	void scale(float xFactor, float yFactor,CPunkt base);
+	const CKreis& move(float x,float y,CPunkt base);
+	const CKreis& rotate(float angle,CPunkt base);
+	const CKreis& scale(float xFactor, float yFactor,CPunkt base);
 
 private:
 	CPunkt m_MP;

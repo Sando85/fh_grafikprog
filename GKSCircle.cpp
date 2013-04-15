@@ -22,18 +22,25 @@ void CGKSCircle::draw(){
 	gs.gx_circle(&list);
 }
 
-Drawable& CGKSCircle::move(int x, int y, CPunkt base){
+Drawable& CGKSCircle::move(float x, float y, CPunkt base){
 	circle.move(x,y,base);
+	updateGpoints();
 	return *this;
 };
 
-Drawable& CGKSCircle::rotate(int angle, CPunkt base){
+Drawable& CGKSCircle::rotate(float angle, CPunkt base){
 	circle.rotate(angle,base);
+	updateGpoints();
 	return *this;
 };
 
 Drawable& CGKSCircle::scale(float xFactor, float yFactor, CPunkt base){
 	circle.scale(xFactor, yFactor,base);
+	updateGpoints();
 	return *this;
 };
 
+void CGKSCircle::updateGpoints(){
+	gCenter = CGKSPoint::createGpoint(circle.getCenter());
+	peripherie = CGKSPoint::createGpoint(circle.getPeripheralPoint());
+}

@@ -10,8 +10,8 @@ public:
 	CGKSLine::~CGKSLine();
 //	virtual void Zeichnen();
 	CLinie getLine();
-	Drawable& const move(int x, int y, CPunkt base);
-	Drawable& const rotate(int angle, CPunkt base);
+	Drawable& const move(float x, float y, CPunkt base);
+	Drawable& const rotate(float angle, CPunkt base);
 	Drawable& const scale(float xFactor, float yFactor, CPunkt base);
 
 protected:
@@ -21,5 +21,6 @@ protected:
 
 private : 
 	void draw();
+	void updateGpoints();
 
 };
