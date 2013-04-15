@@ -13,7 +13,7 @@ Drawable::~Drawable(void)
 
 }
 
-int Drawable::getID(){
+int Drawable::getID() const{
 	return objID;
 }
 

@@ -1,15 +1,15 @@
 #include "StdAfx.h"
 #include "GeoObject.h"
 
-CGeoObject::CGeoObject(){
+CGeoObject::CGeoObject(void){
 
 }
 
-CGeoObject::~CGeoObject(){
+CGeoObject::~CGeoObject(void){
 	
 }
 
-int CGeoObject::getObjNr(){
+int CGeoObject::getObjNr() const{
 	return m_iObjNr;
 }
 
