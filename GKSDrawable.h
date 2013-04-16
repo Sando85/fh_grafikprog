@@ -19,5 +19,6 @@ protected:
 private:
 	void createSegment(int id);
 	void closeSegment();
+	virtual void updateGpoints() = 0;
 
 };

@@ -1,6 +1,7 @@
 #pragma once
 #include "stdafx.h"
 #include "Database.h"
+#include <iostream>
 
 /**
 *	KONSTURKTOR / DESTRUKTOR
@@ -34,8 +35,8 @@ void CDatabase::deleteGraphic(int id){
 		searchObject(id)->deleteGraphic();
 };
 
-Drawable* const CDatabase::searchObject(int id) const{
-	std::vector<Drawable* const>::const_iterator it = drawables.begin();
+Drawable* CDatabase::searchObject(int id) const{
+	std::vector<Drawable*>::const_iterator it = drawables.begin();
 	while(it != drawables.end()){
 		Drawable* p = (*it++);
 		if(p->getID() == id)
@@ -46,7 +47,7 @@ Drawable* const CDatabase::searchObject(int id) const{
 
 void CDatabase::redraw(){
 	deleteAllGraphics();
-	std::vector<Drawable* const>::const_iterator it = drawables.begin();
+	std::vector<Drawable*>::const_iterator it = drawables.begin();
 	while(it != drawables.end()){
 		Drawable* p = (*it++);
 		p->Zeichnen();
@@ -54,12 +55,21 @@ void CDatabase::redraw(){
 };
 
 void CDatabase::deleteAllGraphics(){
-	std::vector<Drawable* const>::iterator it = drawables.begin();
+	std::vector<Drawable*>::iterator it = drawables.begin();
 	while(it != drawables.end()){
 		Drawable* p = *it++;
 		p->deleteGraphic();
 	};
 };
+
+void CDatabase::printAllElements(){
+	std::vector<Drawable*>::iterator it = drawables.begin();
+	while(it != drawables.end()){
+		Drawable* p = *it++;
+		std::cout<<p->getID()<<std::endl;;
+	};
+	std::cout<<"\n";
+}
 
 /**
 *	PRIVATES

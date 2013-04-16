@@ -22,19 +22,27 @@ void CGKSLine::draw(){
 	gs.gpolyline(&list);
 };
 
-Drawable& const CGKSLine::move(int x, int y, CPunkt base){
+Drawable& const CGKSLine::move(float x, float y, CPunkt base){
 	//this->getLine()->getAP()->set(50,600);
 	this->line.move(x,y,base);
+	updateGpoints();
 	return *this;
 };
 
-Drawable& const CGKSLine::rotate(int angle, CPunkt base){
+Drawable& const CGKSLine::rotate(float angle, CPunkt base){
 	this->line.rotate(angle,base);
+	updateGpoints();
 	return *this;
 };
 
 Drawable& const CGKSLine::scale(float xFactor,float yFactor,CPunkt base){
 	this->line.scale(xFactor,yFactor,base);
+	updateGpoints();
 	return *this;
 }
+
+void CGKSLine::updateGpoints(){
+	AP = CGKSPoint::createGpoint(line.getAP());
+	EP = CGKSPoint::createGpoint(line.getEP());
+};
 
