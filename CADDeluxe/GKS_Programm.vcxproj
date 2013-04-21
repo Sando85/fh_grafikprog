@@ -60,7 +60,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>GServer100D.lib;"../lib/Helper.lib";%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>GServer100D.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -83,17 +83,47 @@
     <None Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="Exercise_1.h" />
+    <ClInclude Include="GeoObject.h" />
+    <ClInclude Include="GKSCircle.h" />
+    <ClInclude Include="GKSDatabase.h" />
+    <ClInclude Include="GKSDrawable.h" />
+    <ClInclude Include="GKSLine.h" />
+    <ClInclude Include="GKSPoint.h" />
     <ClInclude Include="GKS_Programm.h" />
+    <ClInclude Include="Kreis.h" />
+    <ClInclude Include="Linie.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MatrixFactory.h" />
+    <ClInclude Include="Punkt.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="Exercise_1.cpp" />
+    <ClCompile Include="GeoObject.cpp" />
+    <ClCompile Include="GKSCircle.cpp" />
+    <ClCompile Include="GKSDatabase.cpp" />
+    <ClCompile Include="GKSDrawable.cpp" />
+    <ClCompile Include="GKSLine.cpp" />
+    <ClCompile Include="GKSPoint.cpp" />
     <ClCompile Include="GKS_Programm.cpp" />
     <ClCompile Include="GP_Aufgabe1.cpp" />
+    <ClCompile Include="Kreis.cpp" />
+    <ClCompile Include="Linie.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MatrixFactory.cpp" />
+    <ClCompile Include="Punkt.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

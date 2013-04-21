@@ -5,19 +5,22 @@
 #include "GKSCircle.h"
 #include "GKSLine.h"
 
+CServer CGKS_Programm::server = CServer();
+
 CGKS_Programm::CGKS_Programm(void)
 {
-	db = new CDatabase();
+	db = new CGKSDatabase();
+	startGKS();
 }
 
 CGKS_Programm::~CGKS_Programm(void)
 {
 	delete db;
+	stopGKS();
 }
 
 void CGKS_Programm::execute()
 {	
-
 	CGKSLine* p_linie;
 	CGKSCircle* p_kreis;
 	float s45=0.5*sqrt(2.0f);
@@ -28,7 +31,6 @@ void CGKS_Programm::execute()
 	
 	p1.setPoint(CPunkt(100+50*s45,100+50*s45)); //getPoint()->set(100+50*s45,100+50*s45);
 	p2.setPoint(CPunkt(100-50*s45,100-50*s45)); //getPoint()->set(100-50*s45,100-50*s45);
-	
 	p_linie = new CGKSLine(101,CLinie(p1.getPoint(), p2.getPoint()));
 	p_linie->Zeichnen();
 	db->addObject(*p_linie);
@@ -69,27 +71,6 @@ void CGKS_Programm::execute()
 			db->addObject(*p_linie);
 			y = y + 25;
 		} 
-	
-	/**
-	AfxMessageBox("Lösche Figur 1");	
-	//Loesche Figur 1
-	db->deleteObject(*db->searchObject(101));
-	db->deleteObject(*db->searchObject(102));
-	db->deleteObject(*db->searchObject(103));
-
-	AfxMessageBox("Lösche 2 Mittlere Linien aus Figur 3");	
-	//Loesche 2 Linien aus Figur 3
-	db->deleteObject(*db->searchObject(302));
-	db->deleteObject(*db->searchObject(303));
-
-	AfxMessageBox("Lösche alle Grafiken");	
-	//Loesche alle Grafiken
-	db->deleteAllGraphics();
-
-	AfxMessageBox("Zeichne neu");	
-	//Neuzeichnen
-	db->redraw();
-	*/
 
 	AfxMessageBox("Verschiebe Figur 1 um (200,130)");	
 	
@@ -129,6 +110,7 @@ void CGKS_Programm::execute()
 	db->redraw();
 	//
 
+
 	// Haltepunkt
 	AfxMessageBox("Programm Ende !");	
 
@@ -136,6 +118,7 @@ void CGKS_Programm::execute()
 
 void CGKS_Programm::startGKS(void)
 {
+	CServer& gs = CGKS_Programm::getCServer();
 	// Server starten	
 	gs.gopen_gks("con");
 	gs.gopen_ws(1,NULL,GKS_SUBWINDOW);
@@ -146,6 +129,7 @@ void CGKS_Programm::startGKS(void)
 
 void CGKS_Programm::stopGKS(void)
 {
+	CServer& gs = CGKS_Programm::getCServer();
 	gs.gdeactivate_ws(1);
 	gs.gclose_ws(1);
 	// Server beenden
@@ -169,4 +153,8 @@ void CGKS_Programm::rotate(int objId, int angle, CPunkt base){
 void CGKS_Programm::scale(int objId, float xFactor, float yFactor, CPunkt base){
 	Drawable* obj = db->searchObject(objId);
 	obj->scale(xFactor,yFactor,base);
+}
+
+CServer& CGKS_Programm::getCServer(){
+	return CGKS_Programm::server;
 }

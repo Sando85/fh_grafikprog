@@ -50,12 +50,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\Klassen;D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Helper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>"../lib/Helper.lib";"../CADDeluxe/Debug/Punkt.obj";"../CADDeluxe/Debug/GeoObject.obj";%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>"../CADDeluxe/Debug/Punkt.obj";"../CADDeluxe/Debug/GeoObject.obj";%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

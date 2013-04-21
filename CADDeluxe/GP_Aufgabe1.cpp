@@ -13,8 +13,8 @@ CWinApp theApp;
 #include "GKS_Programm.h"
 #include <iostream>
 
-CServer gs;
-CDatabase* db = new CDatabase();
+//CServer gs;
+//CGKSDatabase* db = new CGKSDatabase();
 
 using namespace std;
 
@@ -32,9 +32,10 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 	else
 	{
 		CGKS_Programm* gks_prog = new CGKS_Programm();
-		gks_prog->startGKS();
 		gks_prog->execute();
-		gks_prog->stopGKS();
+		//gks_prog->startGKS();
+		//gks_prog->execute();
+		//gks_prog->stopGKS();
 		delete gks_prog;
 	}
 

@@ -2,10 +2,10 @@
 //
 #pragma once
 #include "stdafx.h"
-#include "../Helper/Matrix.h"
-#include "../Helper/MatrixFactory.h"
-#include "../CADDeluxe/Klassen/Punkt.h"
-#include "../CADDeluxe/Drawable.h"
+#include "Matrix.h"
+#include "MatrixFactory.h"
+#include "Punkt.h"
+#include "Drawable.h"
 #include <iostream>
 
 using namespace std;
