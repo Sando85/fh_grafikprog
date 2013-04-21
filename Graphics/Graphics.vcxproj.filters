@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Base Header">
+      <UniqueIdentifier>{2f5c72cd-5e55-4063-bf0f-791467016ffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GKS Header">
+      <UniqueIdentifier>{1601c110-36b6-4942-ba43-cbe310fb72e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Base">
+      <UniqueIdentifier>{902e8946-f0b2-4692-9901-0de22d852c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GKS">
+      <UniqueIdentifier>{62b50298-b062-4025-a0f8-0c1f41aee465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\main">
+      <UniqueIdentifier>{57aa7db0-eff9-4167-be0b-b089703ecf7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{ad9ceda0-e42f-4ce0-b6bd-1e8402297a96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Database.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoObject.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Kreis.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Linie.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Punkt.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSCircle.h">
+      <Filter>Header Files\GKS Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSDrawable.h">
+      <Filter>Header Files\GKS Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSLine.h">
+      <Filter>Header Files\GKS Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSPoint.h">
+      <Filter>Header Files\GKS Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixFactory.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files\Base Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Database.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoObject.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Kreis.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Punkt.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSCircle.cpp">
+      <Filter>Source Files\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSDrawable.cpp">
+      <Filter>Source Files\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSLine.cpp">
+      <Filter>Source Files\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSPoint.cpp">
+      <Filter>Source Files\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixFactory.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Linie.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Source Files\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

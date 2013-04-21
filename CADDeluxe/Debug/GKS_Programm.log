@@ -1,0 +1,65 @@
+﻿Build started 4/21/2013 1:28:03 AM.
+     1>Project "D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\GKS_Programm.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\GKS_Programm.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\GKS_Programm.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Graphics /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yc"StdAfx.h" /Fp"Debug\GKS_Programm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\drawable.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\drawable.h(15): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\drawable.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Graphics /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yu"StdAfx.h" /Fp"Debug\GKS_Programm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GKS_Programm.cpp GP_Aufgabe1.cpp
+         GP_Aufgabe1.cpp
+         GKS_Programm.cpp
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkspoint.h(16): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkspoint.h(17): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkspoint.h(18): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkspoint.h(18): warning C4373: 'CGKSPoint::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\drawable.h(16) : see declaration of 'Drawable::scale'
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkscircle.h(12): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkscircle.h(13): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkscircle.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gkscircle.h(14): warning C4373: 'CGKSCircle::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\drawable.h(16) : see declaration of 'Drawable::scale'
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gksline.h(12): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gksline.h(13): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gksline.h(14): warning C4227: anachronism used : qualifiers on reference are ignored
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\gksline.h(14): warning C4373: 'CGKSLine::scale': virtual function overrides 'Drawable::scale', previous versions of the compiler did not override when parameters only differed by const/volatile qualifiers
+                 d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\graphics\drawable.h(16) : see declaration of 'Drawable::scale'
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\caddeluxe\gks_programm.cpp(23): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\caddeluxe\gks_programm.cpp(144): warning C4305: 'argument' : truncation from 'double' to 'Gfloat'
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\caddeluxe\gks_programm.cpp(144): warning C4305: 'argument' : truncation from 'double' to 'Gfloat'
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\caddeluxe\gks_programm.cpp(161): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\caddeluxe\gks_programm.cpp(161): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\caddeluxe\gks_programm.cpp(166): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Debug\GKS_Programm.exe" /NOLOGO GServer100D.lib ../lib/Helper.lib /MANIFEST /ManifestFile:"Debug\GKS_Programm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Debug\GKS_Programm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Debug\GKS_Programm.lib" /MACHINE:X86 Debug\GKS_Programm.obj
+         Debug\GP_Aufgabe1.obj
+         Debug\stdafx.obj
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CDatabase::~CDatabase(void)" (??1CDatabase@@QAE@XZ) referenced in function "public: void * __thiscall CDatabase::`scalar deleting destructor'(unsigned int)" (??_GCDatabase@@QAEPAXI@Z)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CGKSPoint::~CGKSPoint(void)" (??1CGKSPoint@@QAE@XZ) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: void __thiscall CDatabase::deleteObject(class Drawable &)" (?deleteObject@CDatabase@@QAEXAAVDrawable@@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: class CPunkt const & __thiscall CPunkt::move(float,float,class CPunkt)" (?move@CPunkt@@QAEABV1@MMV1@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: void __thiscall CDatabase::redraw(void)" (?redraw@CDatabase@@QAEXXZ) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: class Drawable * __thiscall CDatabase::searchObject(int)const " (?searchObject@CDatabase@@QBEPAVDrawable@@H@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CKreis::~CKreis(void)" (??1CKreis@@QAE@XZ) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CGKSCircle::CGKSCircle(int,class CKreis)" (??0CGKSCircle@@QAE@HVCKreis@@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CKreis::CKreis(class CPunkt,float)" (??0CKreis@@QAE@VCPunkt@@M@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: void __thiscall CDatabase::addObject(class Drawable &)" (?addObject@CDatabase@@QAEXAAVDrawable@@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CLinie::~CLinie(void)" (??1CLinie@@QAE@XZ) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CGKSLine::CGKSLine(int,class CLinie)" (??0CGKSLine@@QAE@HVCLinie@@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CLinie::CLinie(class CPunkt,class CPunkt)" (??0CLinie@@QAE@VCPunkt@@0@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: class CPunkt __thiscall CGKSPoint::getPoint(void)const " (?getPoint@CGKSPoint@@QBE?AVCPunkt@@XZ) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: void __thiscall CGKSPoint::setPoint(class CPunkt)" (?setPoint@CGKSPoint@@QAEXVCPunkt@@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CPunkt::~CPunkt(void)" (??1CPunkt@@QAE@XZ) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CGKSPoint::CGKSPoint(int,class CPunkt)" (??0CGKSPoint@@QAE@HVCPunkt@@@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>GKS_Programm.obj : error LNK2019: unresolved external symbol "public: __thiscall CPunkt::CPunkt(float,float)" (??0CPunkt@@QAE@MM@Z) referenced in function "public: void __thiscall CGKS_Programm::execute(void)" (?execute@CGKS_Programm@@QAEXXZ)
+     1>D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Debug\GKS_Programm.exe : fatal error LNK1120: 18 unresolved externals
+     1>Done Building Project "D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\GKS_Programm.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.43

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{88ed31dc-34db-4ca3-a30c-5dc555dc54ba}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{7654202f-f61b-45cc-ad2c-b4c9a06ebd79}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{918fcf0a-29c1-4762-8dc7-d634aa9b23ea}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Main">
+      <UniqueIdentifier>{7b7b2766-4a08-45f0-9393-3f4f11e0b28a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Main">
+      <UniqueIdentifier>{d6580538-b608-4ba9-bd80-e3693cffd78c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GKS_Programm.h">
+      <Filter>Headerdateien\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Headerdateien\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headerdateien\Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GKS_Programm.cpp">
+      <Filter>Quelldateien\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Quelldateien\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GP_Aufgabe1.cpp">
+      <Filter>Quelldateien\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

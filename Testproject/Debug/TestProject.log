@@ -1,0 +1,17 @@
+﻿Build started 4/21/2013 1:28:05 AM.
+     1>Project "D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Testproject\TestProject.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\TestProject.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Debug\TestProject.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\Klassen /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Helper /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\TestProject.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\Klassen /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Helper /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\TestProject.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt TestProject.cpp
+         TestProject.cpp
+     1>d:\studium\grafikprogrammierung\projekt\gitreps\grafikproggen\testproject\testproject.cpp(5): fatal error C1083: Cannot open include file: '../Helper/Matrix.h': No such file or directory
+     1>Done Building Project "D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Testproject\TestProject.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.15
