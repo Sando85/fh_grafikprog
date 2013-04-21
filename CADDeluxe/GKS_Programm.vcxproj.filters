@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{88ed31dc-34db-4ca3-a30c-5dc555dc54ba}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{7654202f-f61b-45cc-ad2c-b4c9a06ebd79}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{918fcf0a-29c1-4762-8dc7-d634aa9b23ea}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Main">
+      <UniqueIdentifier>{7b7b2766-4a08-45f0-9393-3f4f11e0b28a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Main">
+      <UniqueIdentifier>{d6580538-b608-4ba9-bd80-e3693cffd78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Base">
+      <UniqueIdentifier>{9e6ddfe8-923c-4e9a-af0b-a882679b7801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\GKS">
+      <UniqueIdentifier>{ed42e9b0-5440-4d5f-a06d-9ab7018662ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Base">
+      <UniqueIdentifier>{82fdfb28-6719-44d1-9437-c2c563528c92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\GKS">
+      <UniqueIdentifier>{1aac1d4f-1ac8-4b94-abc2-8c1ff4d4554e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Excercises">
+      <UniqueIdentifier>{95802489-1319-4713-93ca-6485772ba2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Exercises">
+      <UniqueIdentifier>{c5376e47-5a28-4f9d-b12e-19ca6c1b2247}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GKS_Programm.h">
+      <Filter>Headerdateien\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Headerdateien\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Headerdateien\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Database.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GeoObject.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Kreis.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Linie.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixFactory.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Punkt.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSCircle.h">
+      <Filter>Headerdateien\GKS</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSDrawable.h">
+      <Filter>Headerdateien\GKS</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSLine.h">
+      <Filter>Headerdateien\GKS</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSPoint.h">
+      <Filter>Headerdateien\GKS</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Headerdateien\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercise_1.h">
+      <Filter>Headerdateien\Excercises</Filter>
+    </ClInclude>
+    <ClInclude Include="GKSDatabase.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GKS_Programm.cpp">
+      <Filter>Quelldateien\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Quelldateien\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GP_Aufgabe1.cpp">
+      <Filter>Quelldateien\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawable.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GeoObject.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Linie.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Kreis.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixFactory.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Punkt.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSCircle.cpp">
+      <Filter>Quelldateien\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSPoint.cpp">
+      <Filter>Quelldateien\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSDrawable.cpp">
+      <Filter>Quelldateien\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSLine.cpp">
+      <Filter>Quelldateien\GKS</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise_1.cpp">
+      <Filter>Quelldateien\Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Database.cpp">
+      <Filter>Quelldateien\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="GKSDatabase.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

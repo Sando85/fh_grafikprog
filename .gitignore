@@ -1,2 +1,8 @@
 /Debug
 /Helper/Helper/Debug
+/ipch
+*.sdf
+*.sdf
+
+/*.opensdf
+/Testproject
