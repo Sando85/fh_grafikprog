@@ -1,6 +1,8 @@
-﻿Build started 4/21/2013 11:03:02 PM.
+﻿Build started 4/21/2013 11:20:58 PM.
      1>Project "D:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\CADDeluxe\GKS_Programm.vcxproj" on node 2 (rebuild target(s)).
-     1>InitializeBuildStatus:
+     1>_PrepareForClean:
+         Deleting file "Debug\GKS_Programm.lastbuildstate".
+       InitializeBuildStatus:
          Touching "Debug\GKS_Programm.unsuccessfulbuild".
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\Studium\Grafikprogrammierung\Projekt\gitreps\Grafikproggen\Graphics /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Yc"StdAfx.h" /Fp"Debug\GKS_Programm.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
@@ -132,4 +134,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.97
+Time Elapsed 00:00:03.61
